@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<bean id="admin" class="com.shingo.Administrador">
+		<constructor-arg name="idAdmin" value="16"></constructor-arg>
+		<constructor-arg name="nombre" value="Shingo"></constructor-arg>
+		<property name="apellido" value="Vargas"></property>
+<!-- 		<property name="direccion" ref="direccion"></property> -->
+	</bean>
+
+<!-- 	<bean id="direccion" class="com.shingo.Direccion"> -->
+<!-- 		<constructor-arg name="calle" value="Bolivia 2289"></constructor-arg> -->
+<!-- 		<constructor-arg name="cp" value="1744"></constructor-arg> -->
+<!-- 	</bean> -->
+
+	<context:component-scan base-package="com.shingo"></context:component-scan>
+</beans>
