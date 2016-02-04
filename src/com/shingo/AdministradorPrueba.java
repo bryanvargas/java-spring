@@ -2,7 +2,9 @@ package com.shingo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Administrador {
+import com.shingo.pojo.Direccion;
+
+public class AdministradorPrueba {
 	
 	private int idAdmin;
 	private String nombre;
@@ -12,11 +14,11 @@ public class Administrador {
 	@Autowired
 	private Direccion direccion;
 	
-	public Administrador() {
+	public AdministradorPrueba() {
 		
 	}
 	
-	public Administrador(int idAdmin, String nombre){
+	public AdministradorPrueba(int idAdmin, String nombre){
 		this.idAdmin = idAdmin;
 		this.nombre = nombre;
 	}
